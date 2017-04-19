@@ -1,0 +1,21 @@
+print('Task 2')
+print('A and (/B) or /(A or (/C))')
+print('A and ((/B or /A) and (/B or C))')
+print()
+print('1 - (/B or /A)')
+print('2 - (/B or C)')
+print('3 - 1 and 2')
+print('4 - A and 3')
+print()
+a = True
+b = True
+c = True
+print('|   A   |   B   |   C   |   1   |   2   |   3   |   4   |')
+print('|',not a,'|',not b,'|',not c,'|',b or a,' |',b or c,' |',(b or a)and(b or c),' |',not a and((b or a)and(b or c)),'|')
+print('|',not a,'|',not b,'|',c,' |',b or a,' |',b or c,' |',(b or a)and(b or a),' |',not a and((b or a)and(b or a)),'|')
+print('|',not a,'|',b, ' |',not c,'|',a or not b,' |',not b or not c,'|',(a or not b)and(not b or not c),'|',not a and((a or not b)and(not b or not c)),'|')
+print('|',not a,'|',b,' |',c,' |',a or not b,' |',not b or c,' |',(a or not b)and(not b or c),' |',not a and((a or not b)and(not b or c)),'|')
+print('|',a,' |',not b,'|',not c,'|',not a or b,' |',b or not c,' |',(not a or b)and(b or not c),' |',a and((not a or b)and(b or not c)),' |')
+print('|',a,' |',not b,'|',c,' |',not a or b,' |',b or c,' |',(not a or b)and(b or c),' |',a and((not a or b)and(b or c)),' |')
+print('|',a,' |',b,' |',not c,'|',not a or not b,'|',not b or not c,'|',(not a or not b)and(not a or not b),'|',a and((not a or not b)and(not a or not b)),'|')
+print('|',a,' |',b,' |',c,' |',not a or not b,'|',not b or c,' |',(not a or not b)and(not b or c),'|',a and((not a or not b)and(not b or c)),'|')
